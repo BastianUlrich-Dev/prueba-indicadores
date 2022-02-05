@@ -1,0 +1,27 @@
+<!-- <button (click)="accionBotonDetalle()">Activar</button> -->
+<div class="indicadores--grid">
+    <h1 class="indicadores--text">Indicadores</h1>
+
+    <app-indicador
+    [indica]="indicador"
+    *ngFor="let indicador of indicadores"
+    (mostrarDetalle)="mostrarDetalle($event)"
+    >
+    </app-indicador>
+
+</div>
+
+
+<div class="indicador-detalle" [class.active]="verDetalleIndicador">
+
+    <div>
+        <button (click)="accionBotonDetalle()">Volver</button>
+
+        <section
+         *ngFor="let indicadador of indicadorSeleccionado"
+         >
+            <p>codigo: {{indicadador.nombre}}</p>
+        </section>
+    </div>
+</div>
+

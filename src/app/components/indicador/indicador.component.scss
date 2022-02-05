@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    // align-content: center;
+    padding: 10px;
+
+}
+
+.table--text_left{
+
+    width: 288px;
+    height: 60px;
+}
+.table--text_left .table--text_nombre{
+    margin-bottom: 5px;
+}
+.table--text_left .table--text_nombre{
+    color: #201E1C;
+    font-weight: 600;
+
+}
+
+.table--text_left .table--text_unidad_medida{
+    color: #1A9AF7;
+}
+
+.table--text_right img{
+    width: 20px;
+    height: 20px;
+}
+
+.table--text_right .text-right_icon-info {
+    margin-right: 5px;
+}
+
+
+
